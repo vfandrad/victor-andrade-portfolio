@@ -16,7 +16,7 @@ const Experience = () => {
 
           <div className="mb-1">
             <h3 className="font-mono font-bold text-foreground text-lg">
-              F5 Informática - Pimenta Bueno
+              F5 Informática - Pimenta Bueno [Estágio]
             </h3>
             <p className="text-primary text-sm font-mono">Jul 2025 - Jul 2025</p>
           </div>

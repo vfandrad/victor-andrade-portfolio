@@ -58,16 +58,24 @@
   }
 }
 
-/* animacao de typing cursor */
+/* cursor piscando depois que termina de digitar */
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
 }
 
-.typing-cursor::after {
-  content: '|';
-  animation: blink 1s infinite;
+.typing-cursor-char {
   color: hsl(var(--primary));
+}
+
+.typing-cursor-char.blink {
+  animation: blink 1s infinite;
+}
+
+/* background com grid sutil igual a referencia */
+body {
+  background-image: radial-gradient(circle, hsl(var(--border)) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
 /* scroll suave */
